@@ -1,4 +1,4 @@
-# Email Phishing Awareness & Security Operations Improvement  
+# Phishing Investigation & Awareness Improvement  
 **Global Payments Provider** 
 
 ---
