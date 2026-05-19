@@ -2,7 +2,6 @@
 
 
 **Date:** 01-06-2025
-
 **Environment:** Simulated Global Payments Provider SOC  
 **Domain:** Email Security / Threat Detection / SOC Investigation  
 **Focus:** Phishing analysis, IOC extraction, and detection engineering in a cloud-enabled SOC environment  
