@@ -1,10 +1,10 @@
 # Phishing Incident Investigation – Email Analysis & IOC Extraction
 
-![Status](https://img.shields.io/badge/status-Completed-brightgreen)
+
 
 ---
 
-### Date: 01-06-2025
+### Date: 01-06-2025 ![Status](https://img.shields.io/badge/status-Completed-brightgreen)
 
 ---
 
