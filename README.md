@@ -1,16 +1,14 @@
 # Phishing Incident Investigation – Email Analysis & IOC Extraction ![Status](https://img.shields.io/badge/status-Completed-brightgreen)
 
-**Date:** 01-06-2025
+## Overview
 
-**Environment:** Simulated Global Payments Provider SOC  
-**Domain:** Email Security / Threat Detection / SOC Investigation  
-**Focus:** Phishing analysis, IOC extraction, and detection engineering in a cloud-enabled SOC environment  
+Simulated a Phishing Attack on a Global Payment providers SOC to focus on Phishing analysis, IOC extraction, and detection engineering in a cloud-enabled SOC environment.
 
 ---
 
-## 1. Incident Overview
+### 1. Incident Overview
 
-A suspected phishing email was reported by an end user within the organization. The message impersonated a legitimate service provider and attempted to redirect the user to a credential harvesting page.
+A suspected phishing email was reported by an end user within the organisation. The message impersonated a legitimate service provider and attempted to redirect the user to a credential harvesting page.
 
 The objective of this investigation was to:
 
@@ -21,7 +19,7 @@ The objective of this investigation was to:
 
 ---
 
-## 2. Threat Summary
+### 2. Threat Summary
 
 The email leveraged common phishing techniques targeting financial environments, including social engineering and domain impersonation.
 
@@ -34,9 +32,9 @@ Observed characteristics:
 
 ---
 
-## 3. Email Analysis
+### 3. Email Analysis
 
-### 3.1 Sender Analysis
+#### 3.1 Sender Analysis
 
 - Display name impersonated a legitimate internal service  
 - Sender domain closely resembled a trusted corporate domain  
@@ -44,7 +42,7 @@ Observed characteristics:
 
 ---
 
-### 3.2 Header Analysis
+#### 3.2 Header Analysis
 ```text
 SPF: FAIL
 DKIM: FAIL
@@ -57,7 +55,7 @@ DMARC: FAIL or misaligned
 
 ---
 
-## 4. Payload & URL Analysis
+### 4. Payload & URL Analysis
 
 The email contained an embedded link presented as a secure login portal.
 
@@ -70,7 +68,7 @@ Findings:
 
 ---
 
-## 5. Tools Used
+### 5. Tools Used
 
 - VirusTotal – URL and domain reputation analysis  
 - MXToolbox – SPF/DKIM/DMARC validation and header inspection  
@@ -79,7 +77,7 @@ Findings:
 
 ---
 
-## 6. Indicators of Compromise (IOCs)
+### 6. Indicators of Compromise (IOCs)
 
 | IOC Type     | Value |
 |--------------|-------|
@@ -90,7 +88,7 @@ Findings:
 
 ---
 
-## 7. Investigation Workflow
+### 7. Investigation Workflow
 
 - User reported suspicious email to SOC  
 - Email headers and payload extracted for analysis  
@@ -102,7 +100,7 @@ Findings:
 
 ---
 
-## 8. Detection Gaps Identified
+### 8. Detection Gaps Identified
 
 - No automated alerting for domain spoofing attempts  
 - Lack of monitoring for SPF/DKIM/DMARC failures  
@@ -111,9 +109,9 @@ Findings:
 
 ---
 
-## 9. Detection & Response Improvements
+### 9. Detection & Response Improvements
 
-### Email Security Enhancements
+#### Email Security Enhancements
 
 - Enforce strict SPF/DKIM/DMARC rejection policies  
 - Implement advanced phishing detection rules in email gateway  
@@ -121,7 +119,7 @@ Findings:
 
 ---
 
-### SOC / SIEM Enhancements
+#### SOC / SIEM Enhancements
 
 - Create alerting for:
   - Domain impersonation patterns  
@@ -133,7 +131,7 @@ Findings:
 
 ---
 
-### Incident Response Actions
+#### Incident Response Actions
 
 - Block malicious domains and IP addresses  
 - Add IOCs to threat intelligence feeds  
@@ -142,7 +140,7 @@ Findings:
 
 ---
 
-## 10. Example Attack Flow (Simulated)
+### 10. Example Attack Flow (Simulated)
 
 User receives phishing email  
 → Clicks malicious link  
@@ -153,7 +151,7 @@ User receives phishing email
 
 ---
 
-## 11. Key Takeaways
+### 11. Key Takeaways
 
 This investigation demonstrates how phishing attacks continue to exploit human behavior and weak email authentication controls.
 
